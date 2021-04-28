@@ -1,4 +1,4 @@
-package com.cybertek.pages;
+package com.cybertek.pages;             //    unique to application     //
 
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.Driver;
@@ -29,7 +29,7 @@ public abstract class BasePage {
     @FindBy(linkText = "My User")
     public WebElement myUser;
 
-    public BasePage() {
+    public BasePage() {                   //Constructor
         PageFactory.initElements(Driver.get(), this);
     }
     /**

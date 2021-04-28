@@ -35,7 +35,5 @@ public class WebDriverFactory {
 
         }
         return driver;
-
     }
-
 }

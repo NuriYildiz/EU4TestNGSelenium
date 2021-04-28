@@ -9,8 +9,8 @@ public class IDLocator1 {
 
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.get("http://practice.cybertekschool.com/multiple_buttons");
-        WebElement dontClickButton = driver.findElement(By.id("disappearing_button"));
+        driver.get("http://practice.cybertekschool.com/multiple_button");
+        WebElement dontClickButton = driver.findElement(By.id("disappearing_buttons"));
         Thread.sleep(4000);
         dontClickButton.click();
         Thread.sleep(4000);

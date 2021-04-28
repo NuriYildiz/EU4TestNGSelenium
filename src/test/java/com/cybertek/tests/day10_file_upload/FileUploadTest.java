@@ -48,7 +48,7 @@ public class FileUploadTest {
 
         //sending file with sendKeys method
         String projectPath = System.getProperty("user.dir");
-        String filePath = "src/test/resources/textfile.txt";
+        String filePath = "src/test/resources/textfile.txt.txt";
         String fullPath = projectPath+"/"+filePath;
         chooseFile.sendKeys(fullPath);
         //clicking upload button
@@ -57,6 +57,6 @@ public class FileUploadTest {
         //getting the file name from browser
         String actualFileName= driver.findElement(By.id("uploaded-files")).getText();
         //verify file name is file.txt
-        Assert.assertEquals(actualFileName,"textfile.txt");
+        Assert.assertEquals(actualFileName,"textfile.txt.txt");
     }
 }

@@ -11,7 +11,7 @@ public class ContactsPage extends BasePage{
     //@FindBy(xpath = "//td[contains(text(),'mbrackstone9@example.com')][@data-column-label='Email']")
     //public WebElement email;
 
-    public WebElement getContactEmail(String email){
+    public WebElement getContactEmail(String email){        //we make our code dynamic for different email addresses
         String xpath ="//td[contains(text(),'"+email+"')][@data-column-label='Email']";
         return Driver.get().findElement(By.xpath(xpath));
     }

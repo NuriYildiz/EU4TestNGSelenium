@@ -58,7 +58,6 @@ public class ExcelUtil {
             }
         }
         return data;
-
     }
 
     //this method will return data table as 2d array
@@ -74,7 +73,6 @@ public class ExcelUtil {
             }
         }
         return data;
-
     }
 
     public List<Map<String, String>> getDataList() {
