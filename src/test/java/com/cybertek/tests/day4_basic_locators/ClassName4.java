@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class className4 {
+public class ClassName4 {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         WebDriver driver = WebDriverFactory.getDriver("chrome");
 
         //make browser fullscreen
@@ -21,7 +21,10 @@ public class className4 {
         driver.get("http://practice.cybertekschool.com/multiple_buttons");
         System.out.println(driver.findElement(By.tagName("h3")).getText());
 
-        }
+
+
+
+    }
 }
 
 

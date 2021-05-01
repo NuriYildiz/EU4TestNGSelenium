@@ -16,6 +16,16 @@ public class LinkTextAndPartialLinkTextLocator5 {
         WebElement link1 = driver.findElement(By.linkText("Example 1: Element on page that is hidden and become visible after trigger"));
         link1.click();
 
+        Thread.sleep(3000);
+        driver.navigate().back();
+
+        Thread.sleep(3000);
+
+        WebElement link2 = driver.findElement(By.partialLinkText("again"));
+        link2.click();
+
+
+        driver.quit();
     }
 }
 

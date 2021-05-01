@@ -25,6 +25,16 @@ public class TagNameLocator3 {
         //Lazy way
         driver.findElement(By.tagName("button")).click();
 
+//        WebDriver driver = WebDriverFactory.getDriver("chrome");
+//        driver.manage().window().maximize();
+//        driver.get("http://practice.cybertekschool.com/sign_up");
+//
+//        WebElement fullName = driver.findElement(By.tagName("input"));
+//        fullName.sendKeys("Mike Smith");
+//
+//        WebElement email = driver.findElement(By.name("email"));
+//        email.sendKeys("Mike Smith With TagName");
+
     }
 
 }
