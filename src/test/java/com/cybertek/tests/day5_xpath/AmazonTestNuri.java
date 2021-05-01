@@ -25,7 +25,6 @@ public class AmazonTestNuri {
         String expectedResult = "1-48 of 104 results fortttt";
         String actualResult = value.getText();
 
-
         if (actualResult.equals(expectedResult)) {
             System.out.println("Test passed");
         } else {
@@ -33,10 +32,6 @@ public class AmazonTestNuri {
             System.out.println("actualResult = " + actualResult);
             System.out.println("expectedResult = " + expectedResult);
         }
-
-
         driver.quit();
-
-
     }
 }
