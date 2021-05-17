@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 public class HW2 {
     public static void main(String[] args) {
 
-        WebDriver driver = WebDriverFactory.getDriver("chrome") ;
+        WebDriver driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
 
         driver.get("http://practice.cybertekschool.com/forgot_password");
@@ -22,8 +22,6 @@ public class HW2 {
 
         WebElement retrivePassword = driver.findElement(By.xpath("//i[contains(text(),'Retrieve password')]"));
 
-
-
         System.out.println("homeLink = " + homeLink.getText());
         System.out.println("header = " + header.getText());
         System.out.println("emailText = " + emailText.getText());
@@ -31,8 +29,6 @@ public class HW2 {
         System.out.println("retrivePassword = " + retrivePassword.getText());
 
         driver.quit();
-
-
-
+        System.out.println("fail = " + "fail");
     }
 }
