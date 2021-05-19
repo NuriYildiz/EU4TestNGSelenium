@@ -13,6 +13,14 @@ public class practice {
         driver.get("http://practice.cybertekschool.com/registration_form");
 
         driver.findElement(By.cssSelector("input[name='firstname']")).sendKeys("James");
+        
+
+
+
+
+
+
+
 
         driver.quit();
 
