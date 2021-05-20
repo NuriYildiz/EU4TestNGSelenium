@@ -13,16 +13,17 @@ public class practice {
         driver.get("http://practice.cybertekschool.com/registration_form");
 
         driver.findElement(By.cssSelector("input[name='firstname']")).sendKeys("James");
-        
+
+        WebDriver driver2 = WebDriverFactory.getDriver("chrome");
+        driver2.manage().window().maximize();
+
+        driver2.get("http://practice.cybertekschool.com/multiple_buttons");
+
+        WebElement button2 = driver2.findElement(By.cssSelector("[name^='bu']:nth-of-type(2)"));
+
+        button2.click();
 
 
-
-
-
-
-
-
-        driver.quit();
 
 
     }
