@@ -1,4 +1,5 @@
 package com.cybertek.tests.day9_popups_tabs_frames;
+
 import com.cybertek.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,9 +13,10 @@ public class MultipleWindows {
     WebDriver driver;
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
         driver = WebDriverFactory.getDriver("chrome");
     }
+
     @AfterMethod
     public void tearDown() throws InterruptedException {
         Thread.sleep(2000);
@@ -22,22 +24,24 @@ public class MultipleWindows {
     }
 
     @Test
-    public void SwitchWindowsTest(){
+    public void SwitchWindowsTest() {
 
         driver.get("http://practice.cybertekschool.com/windows");
         //get title
-        System.out.println("Title before new window:"+driver.getTitle());
+        System.out.println("Title before new window:" + driver.getTitle());
         driver.findElement(By.linkText("Click Here")).click();
-        System.out.println("Title after new window:"+driver.getTitle());
+
+        System.out.println("Title after new window:" + driver.getTitle());
         // System.out.println("driver.getWindowHandle() = " + driver.getWindowHandle());
+
         String currentWindowHandle = driver.getWindowHandle();
         Set<String> windowHandles = driver.getWindowHandles();
         for (String handle : windowHandles) {
-            if(!handle.equals(currentWindowHandle)){
+            if (!handle.equals(currentWindowHandle)) {
                 driver.switchTo().window(handle);
             }
         }
-        System.out.println("Title after switch new window:"+driver.getTitle());
+        System.out.println("Title after switch new window:" + driver.getTitle());
     }
 
     @Test

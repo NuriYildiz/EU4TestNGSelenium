@@ -60,4 +60,20 @@ public class ListOfElements {
         //click OK
         alert.accept();
     }
+
+    @Test
+    public void test22(){
+        driver.get("http://practice.cybertekschool.com/multiple_buttons");
+
+        //regular findElement method will throw NSE if locator does not exist
+        //driver.findElement(By.tagName("buttonaiysdgausda"));
+
+        //passing locator which does not exist, it will not throw NoSuchElement
+        //ALT+enter or OPTION+Enter then one more enter for the shortcut
+        List<WebElement> buttons = driver.findElements(By.tagName("buttonaiysdgausda"));
+
+        System.out.println("buttons.size() = " + buttons.size());
+
+
+    }
 }

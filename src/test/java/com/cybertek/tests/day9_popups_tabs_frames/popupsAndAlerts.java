@@ -24,6 +24,7 @@ public class popupsAndAlerts {
     public void test1() {
         driver.get("http://practice.cybertekschool.com/dropdown");
 
+
     }
 
 

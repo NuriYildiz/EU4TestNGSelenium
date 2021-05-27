@@ -31,7 +31,7 @@ public class NoSelectDropdown {
 
         WebElement dropdownElement = driver.findElement(By.id("dropdownMenuLink"));
 
-        //click the dropdown to see avaiilable options
+        //click the dropdown to see available options
         dropdownElement.click();
 
         //get the options with findElements method and finding common locator between them
@@ -44,13 +44,6 @@ public class NoSelectDropdown {
         for (WebElement option : dropdownOptions) {
             System.out.println(option.getText());
         }
-
-
-
-
-
-
-
 
     }
 }
