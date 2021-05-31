@@ -70,5 +70,12 @@ public class HW {
         Assert.assertEquals(actualResult, expectedResult, "Warning message is not visible");
     }
 
+    @Test
+    public void test5(){
+        driver.get("http://practice-cybertekschool.herokuapp.com");
+        driver.findElement(By.xpath("//a[.='Registration Form'] ")).click();
+
+    }
+
 
 }
